@@ -1,0 +1,32 @@
+*{
+    color:lightgreen;
+    box-sizing:border-box;
+    /* border box makes width of element 400 only adjusting its internal width so that after including margin and padding also,it remains same */
+    /* by default box sizing is content box */
+}
+div p{
+    font-size:20px;
+}
+div{
+    /* with 10px border,width becomes 420 and height as well */
+    width:400px;
+    height:400px;
+    border-radius:30px;
+    border:10px solid black;
+    padding: 25px;
+    margin:50px;
+    /* margin= 10px 20px 10px 20 px(clockwise-top right bottom left);;;same for padding */
+}
+    
+.boxchild{
+    width:90px;
+    height:90px;
+    background-color: blueviolet;
+    border:2px solid black;
+    z-index: 1;
+    margin:auto; /*auto gives margin at left and right only????*/
+}
+
+/* padding - space bw content and border */
+/* margin - space between border and second element;;vertical margin collapses as if we give one 100 px and other 200 px,it wont become tottal 300;it becomes 200(larger one) */
+/* em,rem,% are relative units;;;%-relative to parent element;;;em-changes parent font size(2em means 50%);;;rem-affects root element sizev */,,,,
