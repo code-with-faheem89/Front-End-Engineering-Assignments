@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 0;
+            background-color: aqua;
+        }
+        .navbox{
+            position: sticky;
+            display: flex;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+        }
+        .child #logo{
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            border: 2px white solid;
+
+        }
+        .links{
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+        #search{
+            width: 300px;
+            padding: 10px;
+            border-radius: 30px;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            color: white;
+            background-color:cadetblue;
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 100px;
+            position: relative;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .box form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 280px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cross{
+            position: absolute;
+            left:314px;
+            bottom: 400px;
+            
+
+        }
+        .heart{
+            position: relative;
+            bottom: 45px;
+            left:130px;
+        }
+        .hidden{
+            visibility: hidden;
+            background-color: gray;
+            border-radius: 30px;
+            padding: 5px;
+            position: absolute;
+            bottom: 28px;
+            right: 10px;
+            width: 300px;
+        
+        }
+        .heart:hover{
+            .hidden{
+                visibility: visible;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbox">
+            <div class="child"><img id="logo" src="stars-galaxy-3840x2160-10307.jpg" ></div>
+            <input id="search" type="text" placeholder="Search">
+            <div class="links">
+                <div class="child">Home</div>
+                <div class="child">About</div>
+                <div class="child">Contact</div>
+                <div class="child">Login/SignUp</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="box">
+            <span class="cross">❎</span>
+            <h2>Welcome Back</h2>
+            <p>Login to Continue</p>
+            <form class="field">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="heart" style="font-size: 16px;">🖤
+                    <span class="hidden">Password should be at least 8 characters</span>
+                </div>
+                <button>Login</button>
+            </form>
+            <p style="margin-top: 10px; font-size: 14px;">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
