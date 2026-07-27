@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .box{
+            width:70%;
+            height:600px;
+            border:2px solid red;
+            /* display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            gap:10px; */
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(3,1fr);
+        }
+        .childbox{
+            /* width:100px;
+            height:100px; */
+            border:2px solid black;
+            background-color: blueviolet;
+            /* margin:5px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="childbox"></div>
+        <div class="childbox"></div>
+        <div class="childbox"></div>
+        <div class="childbox"></div>
+        <div class="childbox"></div>
+    </div>
+</body>
+</html>
