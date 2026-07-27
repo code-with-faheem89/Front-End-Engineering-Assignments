@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display:flex;
+            justify-content:center;
+            margin-top:50px;
+            background:#69dfd5;
+        }
+
+        #todo{
+            background:rgb(9, 115, 117);
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(48, 152, 152, 0.2);
+            box-shadow: 10 20 30#9ed3c9;
+            width: 580px;
+        }
+
+        input{
+            padding:8px;
+            width:220px;
+            font-size:16px;
+            margin-right:10px;
+            background: #85f3dd;
+        }
+
+        button{
+            padding:8px 12px;
+            margin:2px;
+            cursor:pointer;
+            background: #85f3dd;
+        }
+
+        #taskList{
+            margin-top:20px;
+            width:500px;
+            min-height:300px;
+            border:2px solid black;
+            border-radius:10px;
+            padding:10px;
+            background:rgb(5, 79, 87);
+        }
+
+        .todoItem{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border:1px solid gray;
+            padding:10px;
+            margin-bottom:10px;
+            border-radius:8px;
+            background:#61d9e1;
+        }
+
+        .completed{
+            background:lightgreen;
+        }
+
+        .buttons button{
+            margin-left:5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="todo"></div>
+
+<script src="todoapp.js"></script>
+
+</body>
+</html>
