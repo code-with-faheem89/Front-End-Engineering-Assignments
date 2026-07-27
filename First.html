@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> html </title>
+        <!--internal css--> 
+        <style>
+            /* id has more specificity than element;id>class>element>pseudo class/element>universal selector*/
+           
+            /* #para{
+                color:aqua;
+            } */
+            .paraclass{
+                color:brown;
+            }
+            p{
+                color:blueviolet;
+            }
+
+             /* universal selector(*) will be for everything */
+            *{
+                color:chartreuse;
+            }
+
+            /* id is unique for an element whereas class can be shared by many elements */
+        </style>
+
+        <!-- external css -->
+        <link rel="stylesheet" href="first.css"> 
+    </head>
+    <body>
+        <details>
+            i dont know
+            <summary> IDK</summary>
+        </details>
+        <br>
+        <progress value="50" max="100" style="width:500px;">Progress</progress>
+    <!-- inline css : it has more specificity than internal and external;inline>internal>external -->
+     <p id="para" class="paraclass" style="font-size: 32px;">students</p>
+     <br>
+     <div class="ij">
+        <p>chitkara university</p>
+        <div class="boxchild">GROUP 1</div>
+     </div>
+    </body>
+</html>
