@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before Exam vs During Exam</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+            text-align:center;
+            padding:40px;
+        }
+
+        h1{
+            font-size:40px;
+            color:#222;
+        }
+
+        .subtitle{
+            color:#555;
+            margin:15px 0 40px;
+            font-size:20px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:350px;
+            background:white;
+            padding:25px;
+            border-radius:20px;
+            box-shadow:0 10px 20px rgba(0,0,0,.2);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px) scale(1.03);
+        }
+
+        .before{
+            border:8px solid #2ecc71;
+        }
+
+        .after{
+            border:8px solid #e74c3c;
+        }
+
+        h2{
+            margin-bottom:20px;
+        }
+
+        .emoji{
+            font-size:80px;
+            margin-bottom:20px;
+        }
+
+        ul{
+            list-style:none;
+            text-align:left;
+        }
+
+        li{
+            margin:12px 0;
+            font-size:18px;
+        }
+
+        button{
+            margin-top:25px;
+            padding:12px 25px;
+            border:none;
+            border-radius:30px;
+            font-size:16px;
+            color:white;
+        }
+
+        .before button{
+            background:green;
+        }
+
+        .after button{
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Before Exam vs During Exam 💀</h1>
+    <p class="subtitle">The life of every college student 😂</p>
+    <div class="container">
+        <div class="card before">
+            <h2>😎 Before Exam</h2>
+            <div class="emoji">😎</div>
+            <ul>
+                <li>✔️ I have 2 weeks left.</li>
+                <li>✔️ I'll start tomorrow.</li>
+                <li>✔️ Let me watch one episode.</li>
+                <li>✔️ Easy semester!</li>
+            </ul>
+            <button>Life is Good 😎</button>
+        </div>
+        <div class="card after">
+            <h2>💀 During Exam</h2>
+            <div class="emoji">💀</div>
+            <ul>
+                <li>❌ Why is the syllabus so long?</li>
+                <li>❌ Coffee isn't working.</li>
+                <li>❌ ChatGPT, save me!</li>
+                <li>❌ Next semester I'll study daily.</li>
+            </ul>
+            <button>Panic Mode 😭</button>
+        </div>
+    </div>
+</body>
+</html>
